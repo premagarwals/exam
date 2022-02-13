@@ -31,7 +31,7 @@ if(pass === admin){
 else{
      alert("Sorry, we can't let you enter");
      alert(admin);
-     window.close();
+     location.replace("./null.html");
 }
 
 if(NewTime - PreTime > 1000*60*10){
