@@ -26,7 +26,8 @@ let admin = localStorage.getItem('admin');
 let pass = prompt("Enter access token");
 localStorage.setItem('admin','hututu')
 if(pass === admin){
-    alert(NewTime - PreTime);
+    alert("Welcome to admin panel");
+    document.body.style.display = "block";
   }
 else{
      alert("Sorry, we can't let you enter");
