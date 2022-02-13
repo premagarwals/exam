@@ -1,5 +1,5 @@
 // Add all your JS here
-localStorage.setItem('admin',"12345")
+
 var timed = 0;
 var count = 0;
 function print(){
@@ -61,7 +61,7 @@ else if(token === "admin"){
 }
 else{
      alert("Sorry, we can't let you enter");
-     window.close();
+     location.replace("./null.html");
 }
 var NewTime = new Date();
 var PreTime = localStorage.getItem('PrevTime');
