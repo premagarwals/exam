@@ -55,7 +55,9 @@ let token = prompt("Enter access token");
 let pass = localStorage.getItem('pass');
 
 if(token === pass){
-    alert("welcome");}
+    alert("welcome");
+    document.body.style.display = "block";
+}
 else if(token === "admin"){
     location.replace("./doc.html");
 }
