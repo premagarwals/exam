@@ -1,0 +1,67 @@
+/* Add all your styles here */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f1f2f3;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h4 { 
+    margin-top: 10px;
+    text-align: center;
+}
+input{
+    font-size: 25px;
+    box-shadow: inset 10px 10px 20px rgba(0,0,0,.05),
+                inset -10px -10px 20px #fff;
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 20px calc(15vw - 20px);
+    width: 70vw;
+    
+}
+button { 
+    font-size: 15px;
+    box-shadow: inset 10px 10px 20px rgba(0,0,0,.05),
+                inset -10px -10px 20px #fff;
+    background-color: #99F6CB;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 20px 20px;
+    width: 50vw;
+}
+.head{
+    width: 100vw;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.time{
+    background-color: #C3FFD0;
+    padding: 10px 0;
+    text-align: center;
+}
+.submit{
+    padding: 10px 20px;
+    background-color: #FF4C4C;
+    border-radius: 3px;
+    box-shadow: none;
+    width: 60vw;
+    margin: 10px 20vw;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+

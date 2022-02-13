@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>huhu</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="author" content="lulu"> 
+  <meta name="description" content="kuku"> 
+  <meta name="keywords" content="programming hero, web playground"> 
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon"> 
+  <!--custom css--> 
+  <link rel="stylesheet" href="css/style.css"> 
+ </head> 
+ <body> 
+  <div id="app"> 
+   <div class="head"> 
+    <h1> exam.com </h1> 
+   </div> 
+   <div class="time"> 
+    <h4> Time spent somewhere else... </h4> 
+    <h1 id="time"> 0 </h1> 
+    <h5> out of </h5> 
+    <h1 id="show"> 0 </h1> 
+   </div> 
+   <h4> Suspicious Activities </h4> 
+   <input id="sus" value="0" readonly>  
+   <button class="submit" onclick="sendMail()"> Submit </button> 
+   <h3></h3>
+   <!-- Start BawkBox Code-->
+   <script data-sil-id="61407ae346e468001e9dba02">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/blog/61407ae346e468001e9dba02?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script>
+   <div class="sil-widget-blog sil-widget" id="sil-widget-61407ae346e468001e9dba02">
+    <a href="//bawkbox.com/install/blog"></a>
+   </div>
+   <!-- End BawkBox Code--> 
+  </div> 
+  <!--main js--> 
+  <script>  
+(function (global) {
+
+    if(typeof (global) === "undefined") {
+        throw new Error("window is undefined");
+    }
+
+    var _hash = "!";
+    var noBackPlease = function () {
+        global.location.href += "#";
+
+        // Making sure we have the fruit available for juice (^__^)
+        global.setTimeout(function () {
+            global.location.href += "!";
+        }, 50);
+    };
+
+    global.onhashchange = function () {
+        if (global.location.hash !== _hash) {
+            global.location.hash = _hash;
+        }
+    };
+
+    global.onload = function () {
+        noBackPlease();
+
+        // Disables backspace on page except on input fields and textarea..
+        document.body.onkeydown = function (e) {
+            var elm = e.target.nodeName.toLowerCase();
+            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+                e.preventDefault();
+            }
+            // Stopping the event bubbling up the DOM tree...
+            e.stopPropagation();
+        };
+    }
+})(window);
+</script> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> 
+  <script type="text/javascript">
+(function() {
+emailjs.init("user_0blSmXmKhMxFmu6H85SuB");
+})();
+</script> 
+  <script>  
+
+</script> 
+  <script src="js/main.js"></script>  
+  <footer> 
+   <p class="programminghero">Learned and developed this site with <a href="http://www.programming-hero.com">Programming Hero</a></p> 
+  </footer>
+ </body>
+</html>
