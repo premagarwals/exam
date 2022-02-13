@@ -4,6 +4,7 @@
     padding: 0;
 }
 body{
+    display: none;
     background-color: #f1f2f3;
     font-family: sans-serif;
     display: flex;
