@@ -1,4 +1,5 @@
 // Add all your JS here
+localStorage.setItem('admin',"12345")
 var timed = 0;
 var count = 0;
 function print(){
