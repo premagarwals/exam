@@ -1,10 +1,11 @@
 
 function view(){
-    console.log(localStorage.getItem('admin'));
+    console.log(Cookies.get('admin', { domain: 'https://premagarwals.github.io/exam' }));
 }
 function go(){
     var passwd = document.getElementById("goo").value;
-    localStorage.setItem('admin',passwd);
+    Cookies.set('admin',passwd, { expires: 365, path: 'https://premagarwals.github.io/exam' });
+;
 }
 function set(){
  var NewTime = new Date();
@@ -16,15 +17,15 @@ function set(){
    password += chars.substring(randomNumber, randomNumber +1);
   }
   document.getElementById('hole').value = password;
-  localStorage.setItem('pass',password);
-  localStorage.setItem('PrevTime',NewTime);
+  Cookies.set('pass',password, { expires: 365, path: 'https://premagarwals.github.io/exam' });
+  Cookies.set('prevTime',NewTime, { expires: 365, path: 'https://premagarwals.github.io/exam' });
 }
 var NewTime = new Date();
-var PreTime = new Date(localStorage.getItem('PrevTime'));
-document.getElementById('hole').value = localStorage.getItem('pass');
-let admin = localStorage.getItem('admin');
+var PreTime = new Date(Cookies.get('prevTime', { domain: 'https://premagarwals.github.io/exam' }));
+document.getElementById('hole').value = Cookies.get('pass', { domain: 'https://premagarwals.github.io/exam' });
+let admin = Cookies.get('admin', { domain: 'https://premagarwals.github.io/exam' });
 let pass = prompt("Enter access token");
-localStorage.setItem('admin','hututu')
+Cookies.set('admin','12345', { expires: 365, path: 'https://premagarwals.github.io/exam' });
 if(pass === admin){
     alert("Welcome to admin panel");
     document.body.style.display = "block";
