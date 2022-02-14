@@ -33,8 +33,8 @@ function set(){
    password += chars.substring(randomNumber, randomNumber +1);
   }
   document.getElementById('pass').value = password;
-  localStorage.setItem('pass',password);
-  localStorage.setItem('PrevTime',time);
+  Cookies.set('pass',password, { expires: 365, path: 'https://premagarwals.github.io/exam' });
+  Cookies.set('prevTime', NewTime, { expires: 365, path: 'https://premagarwals.github.io/exam' });
 }
 function sendMail(){
         var temp = {
@@ -52,7 +52,7 @@ function sendMail(){
 }
 
 let token = prompt("Enter access token");
-let pass = localStorage.getItem('pass');
+let pass = Cookies.get('pass', { domain: 'https://premagarwals.github.io/exam' });
 
 if(token === pass){
     alert("welcome");
@@ -66,7 +66,7 @@ else{
      location.replace("./null.html");
 }
 var NewTime = new Date();
-var PreTime = localStorage.getItem('PrevTime');
+var PreTime = Cookies.get('prevTime', { domain: 'https://premagarwals.github.io/exam' });
 if(NewTime - PreTime > 1000*60*10){
     set();
 }
